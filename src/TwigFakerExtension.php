@@ -3,8 +3,10 @@
 namespace Beveraarts\TwigFaker;
 
 use Faker\Factory;
+use Twig\Extension\ExtensionInterface;
 
-class TwigFakerExtension extends \Twig_Extension {
+class TwigFakerExtension implements ExtensionInterface
+{
 
     public static $factoriesPath = 'factories/';
     private $cache;
@@ -102,6 +104,33 @@ class TwigFakerExtension extends \Twig_Extension {
     {
         return static::$factoriesPath . $type . '.php';
     }
+
+    public function getTokenParsers()
+    {
+        // TODO: Implement getTokenParsers() method.
+    }
+
+    public function getNodeVisitors()
+    {
+        // TODO: Implement getNodeVisitors() method.
+    }
+
+    public function getFilters()
+    {
+        // TODO: Implement getFilters() method.
+    }
+
+    public function getTests()
+    {
+        // TODO: Implement getTests() method.
+    }
+
+    public function getOperators()
+    {
+        // TODO: Implement getOperators() method.
+    }
+
+
 }
 
 class InvalidFactoryException extends \Exception {}
