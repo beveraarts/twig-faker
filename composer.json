@@ -1,5 +1,5 @@
 {
-    "name": "alanablett/twig-faker",
+    "name": "beveraarts/twig-faker",
     "description": "Integration of PHP faker library with the twig templating system.",
     "license": "MIT",
     "authors": [
