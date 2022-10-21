@@ -1,6 +1,6 @@
 <?php
 
-namespace Ablett\TwigFaker;
+namespace Beveraarts\TwigFaker;
 
 use Faker\Factory;
 
